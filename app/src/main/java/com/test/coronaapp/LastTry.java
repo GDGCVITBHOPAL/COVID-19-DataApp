@@ -1,6 +1,7 @@
 package com.test.coronaapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -177,6 +178,9 @@ public class LastTry extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(c, s.getName(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(c,deatil_ativity.class);
+                    intent.putExtra("cname", s.getName());
+                    c.startActivity(intent);
                 }
             });
 

@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LastTry"></activity>
+        <activity android:name=".deatil_ativity"></activity>
+        <activity android:name=".LastTry" />
         <activity android:name=".SecondActivity" />
 
         <uses-library
