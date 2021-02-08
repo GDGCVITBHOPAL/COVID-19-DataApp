@@ -17,7 +17,9 @@ Used Volley Library to parse JSON url into String format and then display the da
 # Screenshots of the App 
 <img src = "Screenshot_20200525-030132.png" width = "200" height = "400" >								 <img src = "Screenshot_20200525-030144.png" width = "200" height = "400" hspace = "20"> 						 <img src = "Screenshot_20200525-030152.png" width = "200" height = "400" >
 
->#  :white_check_mark: CONTRIBUTIONS BEST PRACTICES
+
+
+#  :white_check_mark: CONTRIBUTIONS BEST PRACTICES
 
 ## For first time Contributors
 
@@ -49,13 +51,13 @@ Please help us follow the best practices to make it easy for the reviewer as wel
 
 ***
 
-># 💻&nbsp; GETTING STARTED
+# 💻&nbsp; GETTING STARTED
 
-=> **Fork <a href=https://github.com/LetsUpgrade/FOOTSTEP-APP><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> this repository to start contributing.**
+=> **Fork <a href=https://github.com/DSCVITBHOPAL/COVID-19-DataApp><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> this repository to start contributing.**
 
 => Open your Git Bash command window and in the root directory type the following commands :
 ```bash
     1) git init -initializes the git repository from the GitHub. 
     2) git clone -Clone the repository to your local machine
-      (git clone https://github.com/<your-github-username>/LetsUpgrade/FOOTSTEP-APP.git)
+      (git clone https://github.com/<your-github-username>/DSCVITBHOPAL/COVID-19-DataApp.git)
 ```    
