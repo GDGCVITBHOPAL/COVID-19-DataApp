@@ -27,22 +27,20 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-//import com.squareup.picasso.Picasso;
 
-public class LastTry extends AppCompatActivity {
+
+public class CountryWiseListActivity extends AppCompatActivity {
     public class Countries {
         /*
         INSTANCE FIELDS
          */
-        // private int id;
+
         private String name;
         private String cases;
-        // private String imageURL;
-        // private int technologyExists;
+
         /*
         GETTERS AND SETTERS
          */
-
 
         public String getName() {
             return name;
@@ -178,8 +176,8 @@ public class LastTry extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(c, s.getName(), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(c,deatil_ativity.class);
-                    intent.putExtra("cname", s.getName());
+                    Intent intent = new Intent(c, DetailofCountry.class);
+                    intent.putExtra("cname", s.getName()); //sending the name of the country to the 'DetailofCountry Activity' so that we can parse json object of that particular country. 
                     c.startActivity(intent);
                 }
             });
@@ -241,25 +239,23 @@ public class LastTry extends AppCompatActivity {
                                 for (int i = 0; i < response.length(); i++) {
                                     jo = response.getJSONObject(i);
 
-                                    //int id=jo.getInt("id");
+
                                     String country = jo.getString("country");
                                     String cases = jo.getString("cases");
-                                    //String techExists=jo.getString("technologyexists");
-                                    //String imageURL=jo.getString("imageurl");
+
 
                                     s = new Countries();
-                                    //s.setId(id);
+
                                     s.setName(country);
                                     s.setCases(cases);
-                                    //s.setImageURL(imageURL);
-                                    // s.setTechnologyExists(techExists.equalsIgnoreCase("1") ? 1 : 0);
+
 
                                     downloadedData.add(s);
                                 }
-                                //  myProgressBar.setVisibility(View.GONE);
+
 
                             } catch (JSONException e) {
-                                //myProgressBar.setVisibility(View.GONE);
+
                                 Toast.makeText(c, "GOOD RESPONSE BUT JAVA CAN'T PARSE JSON IT RECEIEVED. "+e.getMessage(), Toast.LENGTH_LONG).show();
                             }
                         }
@@ -268,7 +264,7 @@ public class LastTry extends AppCompatActivity {
                         @Override
                         public void onError(ANError anError) {
                             anError.printStackTrace();
-                            //myProgressBar.setVisibility(View.GONE);
+
                             Toast.makeText(c, "UNSUCCESSFUL :  ERROR IS : "+anError.getMessage(), Toast.LENGTH_LONG).show();
                         }
                     });
@@ -286,15 +282,15 @@ public class LastTry extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_last_try);
+        setContentView(R.layout.country_wise_list_activity);
 
         myListView = findViewById(R.id.myListView);
 
 
-        // final ProgressBar myProgressBar= findViewById(R.id.myProgressBar);
+
         final SearchView mySearchView = (SearchView)findViewById(R.id.mySearchView);
 
-      // mySearchView.setIconified(true);
+
        mySearchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -316,7 +312,7 @@ public class LastTry extends AppCompatActivity {
         });
 
 
-        countries = new JSONDownloader(LastTry.this).result(myListView);
+        countries = new JSONDownloader(CountryWiseListActivity.this).result(myListView);
         adapter = new ListViewAdapter(this, countries);
         myListView.setAdapter(adapter);
     }

@@ -16,7 +16,10 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class deatil_ativity extends AppCompatActivity {
+public class DetailofCountry extends AppCompatActivity {
+
+    /* Declaring all the necessary variables which we will be using*/
+
     public String cases;
     public String Death;
     public String Recover;
@@ -34,10 +37,10 @@ public class deatil_ativity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.detail_of_country);
 
+        /*Intialising all the variables from the resource file*/
 
-
-        setContentView(R.layout.activity_deatil_ativity);
         countrycases = findViewById(R.id.CCases);
         countrydeaths = findViewById(R.id.CDeaths);
         countryre = findViewById(R.id.CRecover);
@@ -49,8 +52,7 @@ public class deatil_ativity extends AppCompatActivity {
 
     }
 
-
-
+/*Getting the intent from the 'CountryWiseListActivity' */
 
     private void getInIntent()
     { if(getIntent().hasExtra("cname")){
@@ -64,10 +66,10 @@ public class deatil_ativity extends AppCompatActivity {
     {
         TextView countryname = findViewById(R.id.CountryDatac);
         countryname.setText(coname);
-       // url = "https://coronavirus-19-api.herokuapp.com/countries/"+coname;
 
+        /*Fetching data from the api */
         final RequestQueue requestQueue;
-        requestQueue = Volley.newRequestQueue(deatil_ativity.this);
+        requestQueue = Volley.newRequestQueue(DetailofCountry.this);
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                 "https://coronavirus-19-api.herokuapp.com/countries/"+coname   , null, new Response.Listener<JSONObject>() {
@@ -86,7 +88,7 @@ public class deatil_ativity extends AppCompatActivity {
                     countryre.setText(Recover);
                     tocases.setText(TodayCases);
                     todeaths.setText(TodayDeaths);
-                    // Data.setText(death);
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -95,7 +97,7 @@ public class deatil_ativity extends AppCompatActivity {
         }, new Response.ErrorListener()
         { @Override
         public void onErrorResponse(VolleyError error){
-            Log.d("myapp", "something went wrond");
+            Log.d("myapp", "something went wrong");
 
         }
         });
