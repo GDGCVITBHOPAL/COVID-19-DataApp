@@ -30,10 +30,12 @@ import java.util.ArrayList;
 
 
 public class CountryWiseListActivity extends AppCompatActivity {
+
     public class Countries {
         /*
         INSTANCE FIELDS
          */
+
 
         private String name;
         private String cases;
