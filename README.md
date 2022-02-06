@@ -1,3 +1,5 @@
+<img src = "CoronaAppLogo.jpg" width = "100" height = "100" >								 
+
 # COVID-19-DataApp
 This app displays the Coronavirus data globally and also displays data of each country as well.
 
@@ -15,7 +17,7 @@ The app displays the covid-19 data of each country indvidually in a list-view fo
 Used Volley Library to parse JSON url into String format and then display the data into the list and the textbox. 
 
 # Screenshots of the App 
-<img src = "app_logo.jpeg" width = "200" height = "400" >								 <img src = "Screenshot0.jpeg" width = "200" height = "400" >								 <img src = "Screenshot1.jpeg" width = "200" height = "400" hspace = "20"> 						 <img src = "Screenshot2.jpeg" width = "200" height = "400" > 						 <img src = "Screenshot3.jpeg" width = "200" height = "400" >
+<img src = "Screenshot0.jpeg" width = "200" height = "400" >          <img src = "Screenshot1.jpeg" width = "200" height = "400" hspace = "20">         <img src = "Screenshot2.jpeg" width = "200" height = "400" >          <img src = "Screenshot3.jpeg" width = "200" height = "400" >
 
 
 
