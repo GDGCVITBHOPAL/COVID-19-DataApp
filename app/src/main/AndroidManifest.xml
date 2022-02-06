@@ -12,15 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".DetailofCountry" />
-        <activity android:name=".CountryWiseListActivity" />
-
+        <activity
+            android:name=".CountrySearchActivity"
+            android:exported="false" />
+        <activity android:name=".DetailofCountry"
+            android:parentActivityName=".CountrySearchActivity"/>
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
