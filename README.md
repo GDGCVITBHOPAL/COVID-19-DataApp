@@ -21,6 +21,10 @@ Used Volley Library to parse JSON url into String format and then display the da
 
 
 
+https://user-images.githubusercontent.com/74100292/152681408-b6251cf5-3c7e-472d-8add-a81538581c05.mp4
+
+
+
 #  :white_check_mark: CONTRIBUTIONS BEST PRACTICES
 
 ## For first time Contributors
