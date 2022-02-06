@@ -14,9 +14,4 @@
         android:icon="@drawable/ic_flag_black_24dp"
         android:title="@string/countries" />
 
-    <item
-
-        android:id="@+id/about"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:title="@string/about" />
 </menu>

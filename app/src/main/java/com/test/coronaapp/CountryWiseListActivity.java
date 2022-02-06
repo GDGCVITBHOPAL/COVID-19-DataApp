@@ -31,7 +31,7 @@ import java.util.ArrayList;
 
 public class CountryWiseListActivity extends AppCompatActivity {
 
-    public class Countries {
+    public static class Countries {
         /*
         INSTANCE FIELDS
          */
@@ -70,7 +70,7 @@ public class CountryWiseListActivity extends AppCompatActivity {
 
     }
 
-    class FilterHelper extends Filter {
+    static class FilterHelper extends Filter {
         ArrayList<Countries> currentList;
         ListViewAdapter adapter;
         Context c;
@@ -121,6 +121,8 @@ public class CountryWiseListActivity extends AppCompatActivity {
             return filterResults;
         }
 
+
+
         @Override
         protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
             adapter.setCountries((ArrayList<Countries>) filterResults.values);
@@ -131,7 +133,7 @@ public class CountryWiseListActivity extends AppCompatActivity {
     /*
        Our custom adapter class
         */
-    public class ListViewAdapter extends BaseAdapter implements Filterable {
+    public static class ListViewAdapter extends BaseAdapter implements Filterable {
 
         Context c;
         ArrayList<Countries> countries;
@@ -210,7 +212,7 @@ public class CountryWiseListActivity extends AppCompatActivity {
     /*
     Our HTTP Client
      */
-    public class JSONDownloader {
+    public static class JSONDownloader {
 
         //SAVE/RETRIEVE URLS
         private static final String JSON_DATA_URL = "https://coronavirus-19-api.herokuapp.com/countries";
@@ -277,45 +279,44 @@ public class CountryWiseListActivity extends AppCompatActivity {
 
 
 
-    ArrayList<Countries> countries = new ArrayList<>();
-    ListView myListView;
-    ListViewAdapter adapter;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.country_wise_list_activity);
-
-        myListView = findViewById(R.id.myListView);
-
-
-
-        final SearchView mySearchView = (SearchView)findViewById(R.id.mySearchView);
-
-
-       mySearchView.setOnSearchClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-        mySearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                adapter.getFilter().filter(s);
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
-                return false;
-            }
-        });
-
-
-        countries = new JSONDownloader(CountryWiseListActivity.this).result(myListView);
-        adapter = new ListViewAdapter(this, countries);
-        myListView.setAdapter(adapter);
+//    ArrayList<Countries> countries = new ArrayList<>();
+//    ListView myListView;
+//    ListViewAdapter adapter;
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.country_wise_list_activity);
+//
+//        myListView = findViewById(R.id.myListView);
+//
+//
+//
+//        final SearchView mySearchView = findViewById(R.id.mySearchView);
+//
+//
+//       mySearchView.setOnSearchClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
+//        mySearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String s) {
+//                adapter.getFilter().filter(s);
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                adapter.getFilter().filter(newText);
+//                return false;
+//            }
+//        });
+//
+//
+//        countries = new JSONDownloader(CountryWiseListActivity.this).result(myListView);
+//        adapter = new ListViewAdapter(this, countries);
+//        myListView.setAdapter(adapter);
     }
-}
