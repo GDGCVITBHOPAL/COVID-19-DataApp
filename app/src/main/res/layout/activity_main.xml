@@ -20,118 +20,147 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:neumorph_shadowColorDark="#24a36f"
+                    app:neumorph_shapeType="pressed">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Global Coronavirus"
+                        android:fontFamily="@font/supermercado_one_regular"
+                        android:textAlignment="center"
+                        android:textSize="37sp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="65dp"
+                        android:gravity="center"
+                        android:text="Data"
+                        android:fontFamily="@font/supermercado_one_regular"
+                        android:textAlignment="center"
+                        android:textSize="37sp"
+                        android:textStyle="bold|italic" />
+                </soup.neumorphism.NeumorphCardView>
+
 
                 <soup.neumorphism.NeumorphCardView
                     android:id="@+id/linear_cases"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    app:neumorph_shadowColorDark="#24a36f"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:neumorph_shadowColorDark="#FFA1C9"
                     app:neumorph_shapeType="flat">
 
                     <TextView
                         android:id="@+id/textView2"
                         android:layout_width="310dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="36dp"
+                        android:layout_marginLeft="15dp"
                         android:layout_marginTop="2dp"
                         android:gravity="center"
-                        android:text="Total World Cases"
+                        android:text="Total Cases"
+                        android:fontFamily="@font/short_stack_regular"
                         android:textAlignment="center"
-                        android:textSize="35sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
+
                     <TextView
                         android:id="@+id/TCases"
                         android:layout_width="310dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="36dp"
+                        android:layout_marginLeft="15dp"
                         android:layout_marginTop="63dp"
                         android:gravity="center"
-                        android:hint="Total World Cases"
+                        android:hint="Total Cases"
+                        android:fontFamily="@font/short_stack_regular"
                         android:textAlignment="center"
-                        android:textSize="35sp" />
+                        android:textSize="30sp" />
                 </soup.neumorphism.NeumorphCardView>
 
-                <LinearLayout
-                    android:id="@+id/casesLayout"
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/linear_deaths"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_below="@id/linear_cases">
+                    android:layout_marginTop="340dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:neumorph_shadowColorDark="#FFA1C9"
+                    app:neumorph_shapeType="flat">
 
-                    <soup.neumorphism.NeumorphCardView
-                        android:id="@+id/linear_deaths"
-                        android:layout_width="200dp"
-                        android:layout_height="150dp"
-                        app:neumorph_shadowColorDark="#24a36f"
-                        app:neumorph_shapeType="flat">
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="Total Deaths"
+                        android:fontFamily="@font/short_stack_regular"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="12dp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:layout_marginLeft="12dp"
-                            android:text="Total Deaths"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/TDeaths"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="66dp"
+                        android:gravity="center"
+                        android:hint="Total Deaths"
+                        android:fontFamily="@font/short_stack_regular"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+                </soup.neumorphism.NeumorphCardView>
 
-                        <TextView
-                            android:id="@+id/TDeaths"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginTop="70dp"
-                            android:hint="Total Deaths"
-                            android:textSize="20sp" />
-                    </soup.neumorphism.NeumorphCardView>
-
-                    <soup.neumorphism.NeumorphCardView
-                        android:id="@+id/linear_recover"
-                        android:layout_width="200dp"
-                        android:layout_height="150dp"
-                        app:neumorph_shadowColorDark="#24a36f"
-                        app:neumorph_shapeType="flat">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="12dp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:layout_marginLeft="12dp"
-                            android:text="Total Recovered"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/TRecover"
-                            android:layout_width="150dp"
-                            android:layout_height="50dp"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginTop="70dp"
-                            android:hint="Total Recovered"
-                            android:textSize="20sp" />
-                    </soup.neumorphism.NeumorphCardView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/countrywise"
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/linear_recover"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/casesLayout"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_height="150dp"
+                    android:layout_marginTop="500dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:neumorph_shadowColorDark="#FFA1C9"
+                    app:neumorph_shapeType="flat">
 
-                </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="Total Recovered"
+                        android:fontFamily="@font/short_stack_regular"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
 
+                    <TextView
+                        android:id="@+id/TRecover"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="66dp"
+                        android:gravity="center"
+                        android:hint="Total Recovered"
+                        android:fontFamily="@font/short_stack_regular"
+                        android:textAlignment="center"
+                        android:textSize="30sp"/>
+                </soup.neumorphism.NeumorphCardView>
 
             </RelativeLayout>
 
@@ -143,15 +172,16 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation"/>
+        android:layout_above="@id/bottom_navigation" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/navig_bar"
-        android:background="?android:attr/windowBackground"/>
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navig_bar" />
 
 
 </RelativeLayout>

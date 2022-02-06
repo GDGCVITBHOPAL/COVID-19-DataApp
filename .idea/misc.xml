@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/drawable/ic_all_inclusive_black_24dp.xml" value="0.2115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/drawable/ic_flag_black_24dp.xml" value="0.2115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/drawable/ic_person_black_24dp.xml" value="0.2115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/drawable/round.xml" value="0.2115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/font/fonting.xml" value="0.2869791666666667" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/activity_splash.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/country_wise_list_activity.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/detail_of_country.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/items.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/list_item.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/COVID-19-DataApp/app/src/main/res/layout/model.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/Covi19-App_GDSC-VITBHOPAL/app/src/main/res/layout/activity_main.xml" value="0.2990353697749196" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/Covi19-App_GDSC-VITBHOPAL/app/src/main/res/layout/activity_splash.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/Covi19-App_GDSC-VITBHOPAL/app/src/main/res/layout/detail_of_country.xml" value="0.25677083333333334" />
